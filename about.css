@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
 :root{
     --color1: #ffffff;
     --color2: #000000;
@@ -13,11 +15,11 @@
     color: var(--color1);
 }
 .container1{
-    height: 40vh;
+    height: 15em;
     width: 100vw;
     background-color: var(--color2);
     background-image: linear-gradient(315deg, #000000 30%, #282e30 64%);
-    margin-top: 20vh;
+    margin-top: 7em;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -32,6 +34,8 @@
 .photo_content{
     height: 25vh;
     width: 35vh;
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     align-items: center;
     margin-left: 4em;
@@ -45,15 +49,16 @@
     flex-direction: column;
     align-items: center;
     color: var(--color2);
-    margin: 0% 5% 0% 5%;
 }
 .edu_heading{
     font-size: 4em;
     margin: 10% 0% 20% 0%;
+    font-family: 'Roboto', sans-serif;
 }
 .edu_body{
     display: flex;
     flex-direction: row;
+    margin: 0% 5% 0% 10%;
 }
 .edu_line{
     height: 40vh;
@@ -84,9 +89,105 @@
     color: var(--color2);
     text-decoration: none;
     font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
 }
 .edu_year{
     font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* certificate */
+.container3{
+    height: 30em;
+    width: 100vw;
+    background-color: var(--color2);
+    background-image: linear-gradient(315deg, #000000 30%, #282e30 64%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cert_heading{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    font-size: 4em;
+    font-family: 'Roboto', sans-serif;
+    margin: 0.4em 0em 0.7em 0em;
+}
+.cert_body{
+    width: 95%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2em;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+}
+.cert_body::-webkit-scrollbar{
+    display: none;
+}
+.cert{
+    width: 18em;
+    height: 13em;
+    background-color: rgb(0, 27, 0);
+    margin: 0em 0.2em 0em 0.2em;
+    padding: 0.7em 0.4em 0em 0.4em;
+    border-radius: 20px;
+}
+.cert:hover{
+    background-color: rgb(37, 65, 0);
+}
+.cert_image{
+    max-width: 10em;
+    max-height: 10em;
+}
+.cert_description{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.4em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+.footer{
+    height: 7vh;
+    width: 100vw;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .icon{
+    margin: 0em 0.3em 0em 0.3em;
+    display: inline;
+    font-size: 2em;
+    z-index: 100;
+    cursor: pointer;
+}
+#whatsapp{
+    color: green;
+}
+#mail{
+    color: red;
+}
+#insta{
+    color: rgb(255, 17, 243);
+}
+#link{
+    color: blue;
+}
+
+@media only screen and (max-width: 600px){
+    .container1{
+        height: 30em;
+        flex-direction: column;
+    }
+    .photo{
+        margin-top: 4em;
+    }
+    .photo_content{
+        margin:0em 4em 0em 4em;
+    }
+}
