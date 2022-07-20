@@ -10,6 +10,11 @@
 </head>
 <body>
     <div class="outer">
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div> 
+        
         <div class="container1">
             <img src="./pic1.jpg" alt="photo" class="photo">
             <p class="photo_content">A Computer science student, intrested
@@ -20,9 +25,9 @@
             </div>
             <div class="container2">
                 <div><p class="edu_heading">Education</p></div>
-            <div class="edu_body">
-                <div class="edu_line">
-                    <i class="fa fa-solid fa-graduation-cap college" id="edu_icon" style="color: blue;"></i>
+                <div class="edu_body">
+                    <div class="edu_line">
+                        <i class="fa fa-solid fa-graduation-cap college" id="edu_icon" style="color: blue;"></i>
                     <i class="fa fa-solid fa-graduation-cap college" id="edu_icon"></i>
                 </div>
                 <div class="institution">
@@ -120,5 +125,16 @@
             </a>
         </div>        
     </div>
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
 </body>
 </html>
