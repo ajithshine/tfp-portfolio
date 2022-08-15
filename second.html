@@ -42,8 +42,31 @@
                 </div>
             </div>
         </div>
-        <!-- certifictes -->
+
+        <!-- github details -->
         <div class="container3">
+            <div><p class="cert_heading">Github status</p></div>
+            <div class="git_cont">
+                <div class="box">
+                    <p class="caption">followers</p>
+                    <p id="followers" class="value">x</p>
+                </div>
+                <div class="box">
+                    <p class="caption">following</p>
+                    <p id="following" class="value">45</p>
+                </div>
+                <div class="box">
+                    <p class="caption">public repositorys</p>
+                    <p id="repos" class="value">22</p>
+                </div>
+                <div class="box">
+                    <p class="caption">public gists</p>
+                    <p id="gists" class="value">34</p>
+                </div>
+            </div>
+        </div>
+        <!-- certifictes -->
+        <div class="container4">
             <div><p class="cert_heading">Certifictes</p></div>
             <div class="cert_body">
                 <div class="cert">
@@ -126,15 +149,6 @@
         </div>        
     </div>
     
-    <script>
-        window.onscroll = function() {myFunction()};
-
-        function myFunction() {
-        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        var scrolled = (winScroll / height) * 100;
-        document.getElementById("myBar").style.width = scrolled + "%";
-        }
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
